@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Button, Container } from 'react-bootstrap'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 import './CourseAdd.css'
 
 const CourseAdd = () => {
@@ -33,7 +33,12 @@ const CourseAdd = () => {
       .then((res) => res.json())
       .then((result) => {
         if (result.insertedId) {
-          Swal.fire('Oh Yeah!', 'Your course has been added!', 'success')
+          swal({
+            title: 'Congratulation!',
+            text: 'Your course has been added!',
+            icon: 'success',
+            button: 'Ok!',
+          })
         }
         e.target.reset()
       })

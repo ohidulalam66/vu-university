@@ -19,7 +19,7 @@ const SingleCourse = ({ courses, handleDeleteCourse }) => {
         <td>{courseInstructor}</td>
         <td>
           <Button
-            variant="outline-dark"
+            variant="outline-danger"
             onClick={() => handleDeleteCourse(_id)}
           >
             <img

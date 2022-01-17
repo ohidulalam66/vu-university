@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Table } from 'react-bootstrap'
-import Swal from 'sweetalert2'
+import swal from 'sweetalert'
 import './courseList.css'
 import SingleCourse from './SingleCourse/SingleCourse'
 
@@ -15,14 +15,13 @@ const CourseList = () => {
   }, [])
 
   const handleDeleteCourse = (id) => {
-    Swal.fire({
+    swal({
       title: 'Are you sure?',
-      text: "You won't be able to revert this!",
+      text:
+        'Once deleted, you will not be able to recover this imaginary course!',
       icon: 'warning',
-      showCancelButton: true,
-      confirmButtonColor: '#3085d6',
-      cancelButtonColor: '#d33',
-      confirmButtonText: 'Yes, delete it!',
+      buttons: true,
+      dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
         const url = `http://localhost:5000/courses/${id}`
@@ -32,13 +31,19 @@ const CourseList = () => {
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
-              Swal.fire('Deleted!', 'Your file has been deleted.', 'success')
-              const remainingCourse = courseList.filter(
+              swal('Poof! Your imaginary course has been deleted!', {
+                icon: 'success',
+              })
+              const remainingCourses = courseList.filter(
                 (course) => course._id !== id,
               )
-              setCourseList(remainingCourse)
+              setCourseList(remainingCourses)
             }
           })
+      } else {
+        swal('Your imaginary course is safe!', {
+          icon: 'info',
+        })
       }
     })
   }
@@ -76,4 +81,3 @@ const CourseList = () => {
 }
 
 export default CourseList
-// Bio-Chemistry	4 years	6050 USD	Henry
