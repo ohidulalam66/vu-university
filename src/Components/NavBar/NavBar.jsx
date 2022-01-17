@@ -21,10 +21,10 @@ const NavBar = () => {
           Creating a Successful and Solution-Oriented Mindset
         </p>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-4">
         <div class="container-fluid">
           <h3 className="text-light">
-            <span className=" text-danger">VU</span> University
+            <span className=" text-danger">ADMIN</span> Dashboard
           </h3>
           <button
             class="navbar-toggler"
@@ -54,18 +54,8 @@ const NavBar = () => {
                   Course Add
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link to="/adminAdd" className="ms-4 text-decoration-none">
-                  Admin Add
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/logIn" className="ms-4 text-decoration-none">
-                  Log In
-                </Link>
-              </li>
-              <Navbar.Text className="ms-4 text-decoration-none">
-                Signed in as: <span className="fw-bold">Mark Otto</span>
+              <Navbar.Text className="ms-4">
+                Admin signed in: <span className="fw-bold">Noyon</span>
               </Navbar.Text>
             </ul>
           </div>

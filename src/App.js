@@ -5,8 +5,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import StudentList from './Components/StudentList/StudentList'
 import CourseList from './Components/CourseList/CourseList'
 import CourseAdd from './Components/CourseAdd/CourseAdd'
-import AdminAdd from './Components/AdminAdd/AdminAdd'
-import LogIn from './Components/LogIn/LogIn'
 
 function App() {
   return (
@@ -18,11 +16,8 @@ function App() {
           <Route path="/courseList" element={<CourseList />} />
           <Route path="/studentList" element={<StudentList />} />
           <Route path="/courseAdd" element={<CourseAdd />} />
-          <Route path="/adminAdd" element={<AdminAdd />} />
-          <Route path="/logIn" element={<LogIn />} />
         </Routes>
       </BrowserRouter>
-      ,
     </div>
   )
 }
