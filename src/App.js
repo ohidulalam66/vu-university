@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import StudentList from './Components/StudentList/StudentList'
 import CourseList from './Components/CourseList/CourseList'
 import CourseAdd from './Components/CourseAdd/CourseAdd'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/studentList" element={<StudentList />} />
           <Route path="/courseAdd" element={<CourseAdd />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   )
