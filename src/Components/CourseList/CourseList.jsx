@@ -3,15 +3,18 @@ import { Container, Table } from 'react-bootstrap'
 import swal from 'sweetalert'
 import './courseList.css'
 import SingleCourse from './SingleCourse/SingleCourse'
+import Loading from '../Loading/Loading'
 
 const CourseList = () => {
   const [courseList, setCourseList] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const url = 'http://localhost:5000/courses'
     fetch(url)
       .then((res) => res.json())
       .then((data) => setCourseList(data))
+    setIsLoading(false)
   }, [])
 
   const handleDeleteCourse = (id) => {
@@ -67,15 +70,19 @@ const CourseList = () => {
               <th>Action</th>
             </tr>
           </thead>
-          <tbody>
-            {courseList.map((courses) => (
-              <SingleCourse
-                key={courses._id}
-                courses={courses}
-                handleDeleteCourse={handleDeleteCourse}
-              />
-            ))}
-          </tbody>
+          {isLoading ? (
+            <Loading />
+          ) : (
+            <tbody>
+              {courseList.map((courses) => (
+                <SingleCourse
+                  key={courses._id}
+                  courses={courses}
+                  handleDeleteCourse={handleDeleteCourse}
+                />
+              ))}
+            </tbody>
+          )}
         </Table>
       </Container>
     </>

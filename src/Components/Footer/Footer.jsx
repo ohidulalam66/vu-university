@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <div className="bg-dark mt-4 pt-2 text-white">
         <Container>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center">
               <img
                 className="img-fluid footerImg"
@@ -20,17 +20,17 @@ const Footer = () => {
             </div>
             <div>
               <img
-                src="https://img.icons8.com/color/48/000000/facebook-new.png"
+                src="https://img.icons8.com/color/28/000000/facebook-new.png"
                 alt="..."
                 className="me-2"
               />
               <img
-                src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
+                src="https://img.icons8.com/color/28/000000/instagram-new--v1.png"
                 alt="..."
                 className="me-2"
               />
               <img
-                src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png"
+                src="https://img.icons8.com/color/28/000000/twitter-circled--v1.png"
                 alt="..."
                 className="me-2"
               />

@@ -56,8 +56,8 @@ const CourseAdd = () => {
       </div>
       <Container className="w-50">
         <form className="py-2 submitFrom" onSubmit={handleCourseAdd}>
-          <input ref={courseNameRef} placeholder="Course Name" />
-          <input ref={groupNameRef} placeholder="Course Group" />
+          <input ref={courseNameRef} placeholder="Course Name" required />
+          <input ref={groupNameRef} placeholder="Course Group" required />
           <select
             className="form-select my-2"
             ref={courseDurationRef}
@@ -66,8 +66,12 @@ const CourseAdd = () => {
             <option value="4 years">4 years</option>
             <option value="1.5 years">1.5 years</option>
           </select>
-          <input ref={courseFeeRef} placeholder="Course Fee" />
-          <input ref={courseInstructorRef} placeholder="Course Instructor" />
+          <input ref={courseFeeRef} placeholder="Course Fee" required />
+          <input
+            ref={courseInstructorRef}
+            placeholder="Course Instructor"
+            required
+          />
           <Button type="submit" variant="outline-dark">
             <img
               src="https://img.icons8.com/color-glass/32/000000/filled-sent.png"

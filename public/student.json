@@ -1,0 +1,162 @@
+[
+    {
+        "id":1,
+        "name":"Julian",
+        "passingYear":2019,
+        "cgpa":3.25,
+        "groupName":"Chemistry (B Sc.)",
+        "gender":"female"
+    },
+    {
+        "id":2,
+        "name":"Isaac",
+        "passingYear":2018,
+        "cgpa":3.46,
+        "groupName":"Science",
+        "gender":"male"
+    },
+    {
+        "id":3,
+        "name":"Andrew",
+        "passingYear":2021,
+        "cgpa":2.25,
+        "groupName":"Business Studies",
+        "gender":"male"
+    },
+    {
+        "id":4,
+        "name":"Caleb",
+        "passingYear":2020,
+        "cgpa":4,"groupName":"Physics (B Sc.)",
+        "gender":"female"
+    },
+    {
+        "id":5,
+        "name":"Ezekiel",
+        "passingYear":2019,
+        "cgpa":3.95,
+        "groupName":"Chemistry (B Sc.)",
+        "gender":"female"
+    },
+    {
+        "id":6,
+        "name":"Jaxson",
+        "passingYear":2018,
+        "cgpa":2.95,
+        "groupName":"B.B.A",
+        "gender":"male"
+    },
+    {
+        "id":7,
+        "name":"Xavier",
+        "passingYear":2021,
+        "cgpa":3.05,
+        "groupName":"Human Studies",
+        "gender":"male"
+    },
+    {
+        "id":8,
+        "name":"Evan",
+        "passingYear":2017,
+        "cgpa":3,
+        "groupName":"Biology (B Sc.)",
+        "gender":"female"
+    },
+    {
+        "id":9,
+        "name":"Kingston",
+        "passingYear":2019,
+        "cgpa":2.95,
+        "groupName":"IT (B Sc.)",
+        "gender":"male"
+    },
+    
+    {
+        "id":10,
+        "name":"Jayce",
+        "passingYear":2018,
+        "cgpa":2.5,
+        "groupName":"M.A",
+        "gender":"female"
+    },
+    {
+        "id":11,
+        "name":"Malachi",
+        "passingYear":2021,
+        "cgpa":4.2,
+        "groupName":"Physics (B Sc.)",
+        "gender":"female"
+    },
+    {
+        "id":12,
+        "name":"Brandon",
+        "passingYear":2021,
+        "cgpa":4.6,
+        "groupName":"Business Studies",
+        "gender":"male"
+    },
+    {
+        "id":13,
+        "name":"Barrett",
+        "passingYear":2017,
+        "cgpa":4.23,
+        "groupName":"IT (B Sc.)",
+        "gender":"female"
+    },
+    {
+        "id":14,
+        "name":"Abraham",
+        "passingYear":2019,
+        "cgpa":3.78,
+        "groupName":"Biology (B Sc.)",
+        "gender":"male"
+    },
+    {
+        "id":15,
+        "name":"Matias",
+        "passingYear":2020,
+        "cgpa":3.55,
+        "groupName":"Science",
+        "gender":"female"
+    },
+    {
+        "id":16,
+        "name":"Holden",
+        "passingYear":2021,
+        "cgpa":2.34,
+        "groupName":"Human Studies",
+        "gender":"male"
+    },
+    {
+        "id":17,
+        "name":"Mark",
+        "passingYear":2018,
+        "cgpa":2.85,
+        "groupName":"M.A",
+        "gender":"male"
+    },
+    {
+        "id":18,
+        "name":"Avery",
+        "passingYear":2019,
+        "cgpa":4.95,
+        "groupName":"B.B.A",
+        "gender":"female"
+    },
+    {
+        "id":19,
+        "name":"Felix",
+        "passingYear":2017,
+        "cgpa":2,
+        "groupName":"IT (B Sc.)",
+        "gender":"male"
+    },
+    {
+        "id":20,
+        "name":"Amari",
+        "passingYear":2021,
+        "cgpa":3.33,
+        "groupName":"Chemistry (B Sc.)",
+        "gender":"female"
+    }
+]
