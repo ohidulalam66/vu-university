@@ -20,7 +20,9 @@ const StudentList = () => {
     <>
       <div className="d-flex justify-content-center align-items-center">
         <img src="https://img.icons8.com/color/48/000000/ours.png" alt="..." />
-        <h2 className="text-danger">Student List</h2>
+        <h2 className="text-danger">
+          Student List({studentList.length} Student)
+        </h2>
         <img src="https://img.icons8.com/color/48/000000/ours.png" alt="..." />
       </div>
       <Container className="mt-4">
@@ -30,7 +32,7 @@ const StudentList = () => {
               <th>Student Name</th>
               <th>Group Name</th>
               <th>Gender</th>
-              <th>Action</th>
+              <th>Info.</th>
             </tr>
           </thead>
           {isLoading ? (

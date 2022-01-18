@@ -1,5 +1,4 @@
 import React from 'react'
-import { Navbar } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './NavBar.css'
 
@@ -38,25 +37,31 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="d-flex align-items-center navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+            <ul className="d-flex align-items-center navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
               <li className="nav-item">
-                <Link to="/courseList" className="ms-4 text-decoration-none">
+                <Link
+                  to="/courseList"
+                  className="ms-4 text-decoration-none px-2 py-2 navLink"
+                >
                   Course List
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/studentList" className="ms-4 text-decoration-none">
+                <Link
+                  to="/studentList"
+                  className="ms-4 text-decoration-none px-2 py-2 navLink"
+                >
                   Student List
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/courseAdd" className="ms-4 text-decoration-none">
+                <Link
+                  to="/courseAdd"
+                  className="ms-4 text-decoration-none px-2 py-2 navLink"
+                >
                   Course Add
                 </Link>
               </li>
-              <Navbar.Text className="ms-4">
-                Admin signed in: <span className="fw-bold">Noyon</span>
-              </Navbar.Text>
             </ul>
           </div>
         </div>

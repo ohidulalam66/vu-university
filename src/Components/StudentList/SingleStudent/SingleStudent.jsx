@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Modal, Row } from 'react-bootstrap'
+import ReactTooltip from 'react-tooltip'
 import CourseCard from '../CourseCard/CourseCard'
 import './SingleStudent.css'
 
@@ -26,14 +27,22 @@ const SingleStudent = ({ students }) => {
         <td>{groupName}</td>
         <td className="text-uppercase">{gender}</td>
         <td>
-          <Button variant="outline-info" onClick={() => setModalShow(id)}>
-            <img
-              src="https://img.icons8.com/color/28/000000/info--v1.png"
-              alt="..."
-            />
-          </Button>
+          <img
+            data-tip
+            data-for="info"
+            className="hoverEffect"
+            onClick={() => setModalShow(id)}
+            src="https://img.icons8.com/color/34/000000/info--v1.png"
+            alt="..."
+          />
         </td>
       </tr>
+
+      {/* Tooltip Use */}
+      <ReactTooltip id="info" type="info" effect="solid">
+        <span>Info.</span>
+      </ReactTooltip>
+
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
@@ -58,7 +67,7 @@ const SingleStudent = ({ students }) => {
               src="https://img.icons8.com/color/48/000000/info--v1.png"
               alt="..."
             />
-            <h3>Student Detail</h3>
+            <h3>Student Information</h3>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -66,7 +75,7 @@ const SingleStudent = ({ students }) => {
             Name: <span className="text-success">{name}</span>
           </h5>
           <p>
-            <b>C GPA:</b> <span className="text-success">{cgpa}</span>
+            <b>C. GPA:</b> <span className="text-success">{cgpa}</span>
             <br />
             <b>Passing Year:</b>{' '}
             <span className="text-success">{passingYear}</span>
@@ -74,6 +83,8 @@ const SingleStudent = ({ students }) => {
             <b>Preferred Group:</b>{' '}
             <span className="text-success">{groupName}</span>
           </p>
+          <p className="fs-3 fw-lighter">{name} choice subjects:</p>
+          <hr />
           <Row xs={1} md={3} className="g-4">
             {gotCourses.map((studentCourses) => (
               <CourseCard

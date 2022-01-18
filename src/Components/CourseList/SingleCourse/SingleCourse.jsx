@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
+import ReactTooltip from 'react-tooltip'
 import './SingleCourse.css'
 
 const SingleCourse = ({ courses, handleDeleteCourse }) => {
@@ -20,17 +20,20 @@ const SingleCourse = ({ courses, handleDeleteCourse }) => {
         <td>{courseFee} USD</td>
         <td>Sir.{courseInstructor}</td>
         <td>
-          <Button
-            variant="outline-danger"
+          <img
+            data-tip
+            data-for="delete"
             onClick={() => handleDeleteCourse(_id)}
-          >
-            <img
-              src="https://img.icons8.com/color/28/000000/delete-user-data.png"
-              alt="..."
-            />
-          </Button>
+            className="hoverEffect"
+            src="https://img.icons8.com/color/34/000000/delete-user-data.png"
+            alt="..."
+          />
         </td>
       </tr>
+      {/* Tooltip Use */}
+      <ReactTooltip id="delete" type="error" effect="solid">
+        <span>Delete</span>
+      </ReactTooltip>
     </>
   )
 }

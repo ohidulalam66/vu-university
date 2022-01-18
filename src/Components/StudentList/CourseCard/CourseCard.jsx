@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, Col } from 'react-bootstrap'
+import './CourseCard.css'
 
 const CourseCard = ({ studentCourses }) => {
   const {
@@ -12,7 +13,7 @@ const CourseCard = ({ studentCourses }) => {
   return (
     <>
       <Col>
-        <Card className="h-100 bg-dark text-white">
+        <Card className="h-100 bg-dark text-white courseCard">
           <Card.Body>
             <Card.Title className="text-success">{courseName}</Card.Title>
             <Card.Text>
@@ -28,7 +29,7 @@ const CourseCard = ({ studentCourses }) => {
                 </span>
                 <br />
                 <span>
-                  <b className="text-danger">Course Fee:</b> {courseFee}
+                  <b className="text-danger">Course Fee:</b> {courseFee} USD
                 </span>
                 <br />
                 <span>

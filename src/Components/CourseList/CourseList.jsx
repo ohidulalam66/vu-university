@@ -67,7 +67,7 @@ const CourseList = () => {
               <th>Course Duration</th>
               <th>Course Fee</th>
               <th>Course Instructor</th>
-              <th>Action</th>
+              <th>Delete</th>
             </tr>
           </thead>
           {isLoading ? (

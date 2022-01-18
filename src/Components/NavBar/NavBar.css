@@ -10,3 +10,14 @@ width: 80px;
 .navHeader {
     background-color: #0089d342;
 }
+
+.navLink {
+    color: white;
+    font-weight: 400;
+}
+ 
+.navLink:hover {
+    background: rgba(117, 115, 115, 0.904);
+    color: black;
+    border-radius: 20px;
+}
