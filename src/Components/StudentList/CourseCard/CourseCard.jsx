@@ -33,7 +33,7 @@ const CourseCard = ({ studentCourses }) => {
                 </span>
                 <br />
                 <span>
-                  <b className="text-danger">Course Instructor:</b>{' '}
+                  <b className="text-danger">Course Instructor:</b> Sir.
                   {courseInstructor}
                 </span>
               </p>

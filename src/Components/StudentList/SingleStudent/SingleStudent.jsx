@@ -10,7 +10,7 @@ const SingleStudent = ({ students }) => {
   const [courseList, setCourseList] = useState([])
 
   useEffect(() => {
-    const url = 'http://localhost:5000/courses'
+    const url = 'https://frozen-reef-49179.herokuapp.com/courses'
     fetch(url)
       .then((res) => res.json())
       .then((data) => setCourseList(data))
@@ -57,6 +57,7 @@ const SingleStudent = ({ students }) => {
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
+        className="modal"
       >
         <Modal.Header closeButton>
           <Modal.Title

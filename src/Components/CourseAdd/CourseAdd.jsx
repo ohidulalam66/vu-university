@@ -26,7 +26,7 @@ const CourseAdd = () => {
       courseInstructor,
     }
 
-    fetch('http://localhost:5000/courses', {
+    fetch('https://frozen-reef-49179.herokuapp.com/courses', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

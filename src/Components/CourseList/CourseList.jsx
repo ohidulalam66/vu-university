@@ -10,7 +10,7 @@ const CourseList = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const url = 'http://localhost:5000/courses'
+    const url = 'https://frozen-reef-49179.herokuapp.com/courses'
     fetch(url)
       .then((res) => res.json())
       .then((data) => setCourseList(data))
@@ -26,7 +26,7 @@ const CourseList = () => {
       dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
-        const url = `http://localhost:5000/courses/${id}`
+        const url = `https://frozen-reef-49179.herokuapp.com/courses/${id}`
         fetch(url, {
           method: 'DELETE',
         })
