@@ -4,7 +4,7 @@
         "name":"Julian",
         "passingYear":2019,
         "cgpa":3.25,
-        "groupName":"Chemistry (B Sc.)",
+        "groupName":"Chemistry(B Sc.)",
         "gender":"female"
     },
     {
@@ -27,7 +27,7 @@
         "id":4,
         "name":"Caleb",
         "passingYear":2020,
-        "cgpa":4,"groupName":"Physics (B Sc.)",
+        "cgpa":4,"groupName":"Physics(B Sc.)",
         "gender":"female"
     },
     {
@@ -35,7 +35,7 @@
         "name":"Ezekiel",
         "passingYear":2019,
         "cgpa":3.95,
-        "groupName":"Chemistry (B Sc.)",
+        "groupName":"Chemistry(B Sc.)",
         "gender":"female"
     },
     {
@@ -51,7 +51,7 @@
         "name":"Xavier",
         "passingYear":2021,
         "cgpa":3.05,
-        "groupName":"Human Studies",
+        "groupName":"HumanStudies",
         "gender":"male"
     },
     {
@@ -59,7 +59,7 @@
         "name":"Evan",
         "passingYear":2017,
         "cgpa":3,
-        "groupName":"Biology (B Sc.)",
+        "groupName":"Biology(B Sc.)",
         "gender":"female"
     },
     {
@@ -67,7 +67,7 @@
         "name":"Kingston",
         "passingYear":2019,
         "cgpa":2.95,
-        "groupName":"IT (B Sc.)",
+        "groupName":"IT(B Sc.)",
         "gender":"male"
     },
     
@@ -84,7 +84,7 @@
         "name":"Malachi",
         "passingYear":2021,
         "cgpa":4.2,
-        "groupName":"Physics (B Sc.)",
+        "groupName":"Physics(B Sc.)",
         "gender":"female"
     },
     {
@@ -100,7 +100,7 @@
         "name":"Barrett",
         "passingYear":2017,
         "cgpa":4.23,
-        "groupName":"IT (B Sc.)",
+        "groupName":"IT(B Sc.)",
         "gender":"female"
     },
     {
@@ -108,7 +108,7 @@
         "name":"Abraham",
         "passingYear":2019,
         "cgpa":3.78,
-        "groupName":"Biology (B Sc.)",
+        "groupName":"Biology(B Sc.)",
         "gender":"male"
     },
     {
@@ -148,7 +148,7 @@
         "name":"Felix",
         "passingYear":2017,
         "cgpa":2,
-        "groupName":"IT (B Sc.)",
+        "groupName":"IT(B Sc.)",
         "gender":"male"
     },
     {
@@ -156,7 +156,7 @@
         "name":"Amari",
         "passingYear":2021,
         "cgpa":3.33,
-        "groupName":"Chemistry (B Sc.)",
+        "groupName":"Chemistry(B Sc.)",
         "gender":"female"
     }
 ]
