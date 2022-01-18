@@ -17,8 +17,7 @@ const CourseList = () => {
   const handleDeleteCourse = (id) => {
     swal({
       title: 'Are you sure?',
-      text:
-        'Once deleted, you will not be able to recover this imaginary course!',
+      text: 'Do you want to Delete your Course?',
       icon: 'warning',
       buttons: true,
       dangerMode: true,
@@ -31,7 +30,7 @@ const CourseList = () => {
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
-              swal('Poof! Your imaginary course has been deleted!', {
+              swal('Poof! Your Course has been Deleted!', {
                 icon: 'success',
               })
               const remainingCourses = courseList.filter(
@@ -41,7 +40,7 @@ const CourseList = () => {
             }
           })
       } else {
-        swal('Your imaginary course is safe!', {
+        swal('Your Course has been Saved!', {
           icon: 'info',
         })
       }
@@ -51,7 +50,9 @@ const CourseList = () => {
     <>
       <div className="d-flex justify-content-center align-items-center">
         <img src="https://img.icons8.com/color/48/000000/ours.png" alt="..." />
-        <h2 className="text-danger">Course List</h2>
+        <h2 className="text-danger">
+          Course List ({courseList.length} Subjects)
+        </h2>
         <img src="https://img.icons8.com/color/48/000000/ours.png" alt="..." />
       </div>
       <Container className="mt-4">
@@ -59,6 +60,7 @@ const CourseList = () => {
           <thead>
             <tr>
               <th>Course Name</th>
+              <th>Group Name</th>
               <th>Course Duration</th>
               <th>Course Fee</th>
               <th>Course Instructor</th>

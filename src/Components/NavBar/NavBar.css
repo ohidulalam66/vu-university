@@ -1,7 +1,12 @@
-.navHeader {
-    background-color: aqua;
+.headerImg {
+width: 80px;
 }
 
 .headerName {
     font-size: 40px;
+    color: #0088D3;
+}
+
+.navHeader {
+    background-color: #0089d342;
 }

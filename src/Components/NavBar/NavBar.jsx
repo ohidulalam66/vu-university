@@ -9,7 +9,7 @@ const NavBar = () => {
       <div className="navHeader py-2">
         <div className="d-flex justify-content-center align-items-center">
           <img
-            className="img-fluid"
+            className="img-fluid headerImg"
             src="https://i.ibb.co/XzhwM6B/download-removebg-preview.png"
             alt="Vu University"
           />

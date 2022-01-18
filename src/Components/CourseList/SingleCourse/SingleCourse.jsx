@@ -6,6 +6,7 @@ const SingleCourse = ({ courses, handleDeleteCourse }) => {
   const {
     _id,
     courseName,
+    groupName,
     courseDuration,
     courseFee,
     courseInstructor,
@@ -14,9 +15,10 @@ const SingleCourse = ({ courses, handleDeleteCourse }) => {
     <>
       <tr>
         <td>{courseName}</td>
+        <td>{groupName}</td>
         <td>{courseDuration}</td>
         <td>{courseFee} USD</td>
-        <td>{courseInstructor}</td>
+        <td>Sir.{courseInstructor}</td>
         <td>
           <Button
             variant="outline-danger"

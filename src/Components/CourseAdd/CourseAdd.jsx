@@ -5,6 +5,7 @@ import './CourseAdd.css'
 
 const CourseAdd = () => {
   const courseNameRef = useRef()
+  const groupNameRef = useRef()
   const courseDurationRef = useRef()
   const courseFeeRef = useRef()
   const courseInstructorRef = useRef()
@@ -12,12 +13,14 @@ const CourseAdd = () => {
   const handleCourseAdd = (e) => {
     e.preventDefault()
     const courseName = courseNameRef.current.value
+    const groupName = groupNameRef.current.value
     const courseDuration = courseDurationRef.current.value
     const courseFee = courseFeeRef.current.value
     const courseInstructor = courseInstructorRef.current.value
 
     const courseInfo = {
       courseName,
+      groupName,
       courseDuration,
       courseFee,
       courseInstructor,
@@ -35,7 +38,7 @@ const CourseAdd = () => {
         if (result.insertedId) {
           swal({
             title: 'Congratulation!',
-            text: 'Your course has been added!',
+            text: 'Your Course has been Added!',
             icon: 'success',
             button: 'Ok!',
           })
@@ -54,6 +57,7 @@ const CourseAdd = () => {
       <Container className="w-50">
         <form className="py-2 submitFrom" onSubmit={handleCourseAdd}>
           <input ref={courseNameRef} placeholder="Course Name" />
+          <input ref={groupNameRef} placeholder="Course Group" />
           <select
             className="form-select my-2"
             ref={courseDurationRef}
