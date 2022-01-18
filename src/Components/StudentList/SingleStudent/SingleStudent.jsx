@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
+import { Button, Modal, Row } from 'react-bootstrap'
 import CourseCard from '../CourseCard/CourseCard'
 import './SingleStudent.css'
 
@@ -74,15 +74,19 @@ const SingleStudent = ({ students }) => {
             <b>Preferred Group:</b>{' '}
             <span className="text-success">{groupName}</span>
           </p>
-          {gotCourses.map((studentCourses) => (
-            <CourseCard
-              key={studentCourses._id}
-              studentCourses={studentCourses}
-            />
-          ))}
+          <Row xs={1} md={3} className="g-4">
+            {gotCourses.map((studentCourses) => (
+              <CourseCard
+                key={studentCourses._id}
+                studentCourses={studentCourses}
+              />
+            ))}
+          </Row>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+          <Button variant="outline-dark" onClick={props.onHide}>
+            Close
+          </Button>
         </Modal.Footer>
       </Modal>
     )
